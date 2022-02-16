@@ -11,8 +11,8 @@
 
 
 #### 安装教程
-使用openpyxl库，selenium库，和re
-
+安装openpyxl库，selenium库，和re
+在目录中新建名为 html 的文件夹
 #### 使用说明
 
 1.  xxxx
