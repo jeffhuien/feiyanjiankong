@@ -79,7 +79,7 @@ def main():
     time1 = re.findall(r'<div data-v-7fcb7d83="" class="timeNum">.*?<p data-v-7fcb7d83="" class="d"> 统计截至 <span data-v-7fcb7d83="">(.*?)</span><em', htmlpage, re.S)[-1]
     databox = [["统计截至：" + time1], [""], ["国内疫情总览"]]
 
-    dailytext = re.findall(r'<div data-v-7fcb7d83="" class="timeNum">(.*?)<div data-v-a29b06be="" data-v-2159a1dc="" class="chinaNow">', htmlpage, re.S)[-1]
+    dailytext = re.findall(r'<div data-v-7fcb7d83="" class="timeNum">(.*?亡</div>)', htmlpage, re.S)[-1]
 
     boxnum = re.findall(r'<div data-v-7fcb7d83="" class="number">(.*?)</div>', dailytext, re.S)
     for i in range(len(boxnum)):
